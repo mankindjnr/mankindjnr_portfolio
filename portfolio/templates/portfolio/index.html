@@ -1,0 +1,351 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>mankindjnr portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'portfolio/favicon.ico' %}" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <link href="{% static 'portfolio/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Amos Njoroge</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/mankindjnr">github</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Hello World!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <div class="masthead-subheading">I craft the backbone of digital experiences - specializing in backend development</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">More About Amos</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Elevate Your Web Presence with My Software Engineering Skills</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Back-end</h4>
+                        <p class="text-muted">In the ever-evolving digital landscape, a robust and efficient backend is the heart of every successful web application.
+                             With a deep specialization in backend development, I'm here to engineer the core functionality that powers your online presence. 
+                             I create the backbone of your web solutions, ensuring they run smoothly, securely, and efficiently.
+                             Trust in my expertise to bring your digital vision to life, ensuring that your systems are not only reliable but also scalable for future growth.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Front-end</h4>
+                        <p class="text-muted">While my expertise lies in backend development, I also understand the importance of creating seamless and engaging user experiences.
+                             I collaborate closely with frontend developers to bridge the gap between the server and the user interface. This ensures that your website not only 
+                             functions flawlessly but also captivates your audience. My deep understanding of
+                                backend intricacies allows me to optimize data handling and integration, resulting in lightning-fast and responsive web applications.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Fullstack software engineer</h4>
+                        <p class="text-muted">As a specialized backend developer with a holistic approach, I have the skills to craft end-to-end web solutions.
+                             When you choose my fullstack development services, you benefit from the best of both worlds.
+                              I build the robust backend infrastructure that powers your application while seamlessly integrating it with an intuitive frontend.
+                               This harmonious synergy ensures a complete, user-friendly, and high-performance digital experience.
+                             Your vision, from server to user interface, will be meticulously developed, promising a comprehensive solution tailored to your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">A showcase of my Software Engineering Skills.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'portfolio/img/portfolio/alias.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">mpesaAlias</div>
+                                <div class="portfolio-caption-subheading text-muted">mobile money</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'portfolio/img/portfolio/phadd.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">phadd</div>
+                                <div class="portfolio-caption-subheading text-muted">user management</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'portfolio/img/portfolio/chamazetu.png' %}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">chamaZetu</div>
+                                <div class="portfolio-caption-subheading text-muted">chama management</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Profile and Institution</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'portfolio/img/team/amos.jpg' %}" alt="..." />
+                            <h4>Amos Njoroge Kairu</h4>
+                            <p class="text-muted">Software Engineer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/njorogeAmos94" aria-label="Amos Njoroge Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/amos-njoroge-kairu-a55558188/" aria-label="Amos Njoroge LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'portfolio/img/team/alx.jpg' %}" alt="..." />
+                            <h4>ALX Africa</h4>
+                            <p class="text-muted">Do Hard Things</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://x.com/alx_africa?t=xhW1QOF05nZ9s9wwB8ijIQ&s=09" aria-label="alx africa twitter profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/alxafrica/" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Proud Alumnus of ALX Africa's Software Engineering Program 🎓 - ALX Software Engineer Graduate 🚀</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients list all the clients u get down here, i have currently disabled it with d-none-->
+        <div class="d-none py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'portfolio/img/logos/microsoft.svg' %}" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'portfolio/img/logos/google.svg' %}" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'portfolio/img/logos/facebook.svg' %}" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'portfolio/img/logos/ibm.svg' %}" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Me</h2>
+                </div>
+
+                <form id="contactForm">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; mankindjnr 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/njorogeAmos94" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/mankindjnr" aria-label="github"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/amos-njoroge-kairu-a55558188/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="d-none col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'portfolio/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">mpesaAlias</h2>
+                                    <p class="item-intro text-muted"><a href="https://aliasmpesa.onrender.com">aliasmpesa.com</a> </p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'portfolio/img/portfolio/alias.png' %}" alt="..." />
+                                    <p>mpesa Alias is a platform designed to enable Mpesa users to make transactions anonymously. It aims to ensure that 
+                                        Personal Indetifiable Information (PII) is not shared with unwanted third parties.Technologies used to build the platform include Python, Django, supaBase, Postgres.
+                                        Api's used include mpesa, supaBase. For security, mpesaAlias implements serialization, and a combination of asymmetric and symmetric encryption</p>
+                                    </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'portfolio/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Phadd</h2>
+                                    <p class="item-intro text-muted"><a href="https://phadd.onrender.com">phadd.com</a> </p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'portfolio/img/portfolio/phadd.png' %}" alt="..." />
+                                    <p>This is a user manangement system which allows users to sign up and sign in not only with their email but biometrics as well (fingerprint). </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'portfolio/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">chamaZetu</h2>
+                                    <p class="item-intro text-muted"><a href="https://chama-zetu.onrender.com">chamazetu.com</a></p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'portfolio/img/portfolio/chamazetu.png' %}" alt="..." />
+                                    <p>chamaZetu is a chama management platofrm, it allows individuals to join chama's as members or even start their own as managers. With this application
+                                        managers can overseee group contributions making group management a breeze. Members can easily monitor contributions made by other members, ensuring transaparency
+                                    and accountability withing the group. </p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'portfolio/js/scripts.js' %}"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
